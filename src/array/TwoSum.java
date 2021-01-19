@@ -1,5 +1,8 @@
 package array;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -61,5 +64,10 @@ public class TwoSum {
         }
 
         return null;
+    }
+
+    public static void main(String[] args) throws ParseException {
+        SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println(s.parse("2020-12-01"));
     }
 }
